@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="An interactive birthday card for Nitika">
+  <title>Happy Birthday Nitika</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="friendship.css">
+</head>
+<body>
+  <canvas id="confetti" aria-hidden="true"></canvas>
+  <main>
+    <section class="hero">
+      <header><span>FOR THE ONE &amp; ONLY</span><b>✦</b><span>30 AUGUST · A VERY SPECIAL DAY</span></header>
+      <div class="headline"><p> Today Special for you </p><h1>HAPPY BIRTHDAY <em>Nitika</em></h1><small>Your friendship makes life more beautiful</small><strong class="date-line">30 AUGUST · THE DAY THE WORLD GOT A LITTLE BRIGHTER.</strong></div>
+      <div class="celebration-grid">
+        <article id="cakeCard" class="cake-card">
+          <div class="card-index">01 / CUT THE CAKE</div>
+          <button id="cakeButton" class="cake-button" type="button" aria-label="केक काटने के लिए टच करें">
+            <span class="cake-half cake-left"><img src="assets/nitika-cake.png" alt=""></span>
+            <span class="cake-half cake-right"><img src="assets/nitika-cake.png" alt=""></span>
+            <span class="knife"><i></i></span><span class="cut-line"></span>
+          </button>
+          <div class="cake-shadow"></div>
+          <button id="cutCta" class="cut-cta" type="button"><span>TOUCH CAKE TO CUT</span><i>↗</i></button>
+          <p class="cut-message">Make a wish, Nitika! ✦</p>
+        </article>
+        <article class="photo-card">
+          <div class="card-index">02 / THE BIRTHDAY GIRL</div>
+          <figure><img src="assets/nitika-photo.jpg" alt="Nitika"><figcaption>NITIKA · ONE FRAME, A THOUSAND MEMORIES</figcaption></figure>
+          <button id="videoButton" class="video-cta" type="button"><span class="play">▶</span><span><small>WATCH NOW</small>VIDEO HIGHLIGHT</span><i>↗</i></button>
+        </article>
+      </div>
+      <div class="hero-foot"><span>CAKE</span><i></i><span>MEMORY</span><i></i><span>VIDEO</span></div>
+    </section>
+    <section class="wish-note friendship-cover">
+      <div class="balloon-layer" aria-hidden="true"><span class="balloon b1">🎈</span><span class="balloon b2">🎈</span><span class="balloon b3">🎈</span><span class="balloon b4">🎈</span><span class="balloon b5">🎈</span><span class="balloon b6">🎈</span><span class="balloon b7">🎈</span><span class="balloon b8">🎈</span><span class="balloon b9">🎈</span><span class="balloon b10">🎈</span><span class="balloon b11">🎈</span><span class="balloon b12">🎈</span></div>
+      <div class="shimmer-filter" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i></div>
+      <span class="note-number">03</span>
+      <div class="friendship-title"><p>A FRIENDSHIP NOTE</p><h2>Lucky to have <br><em>a wonderful friend like you</em></h2><span>30 AUGUST · FOR NITIKA</span></div>
+      <div class="note-body friendship-copy"><p>Having you as a friend makes every day special. I'm grateful for your presence in my life.</p><blockquote>“दुआ है तुम्हारी हर उड़ान आसमान से ऊँची हो,<br>हर ख्वाब तुम्हारे नाम हो;<br>दूरी चाहे जितनी भी हो,<br>हमारी दोस्ती हमेशा उतनी ही खास हो।”</blockquote><b>Happy Birthday, Nitika</b></div>
+    </section>
+    <footer><span>HAPPY BIRTHDAY NITIKA</span><b>✦ CELEBRATE LOUDLY ✦</b></footer>
+  </main>
+  <div id="videoModal" class="modal" role="dialog" aria-modal="true" aria-labelledby="videoTitle" hidden>
+    <button id="closeVideo" class="close" type="button" aria-label="Close video">×</button>
+    <div class="modal-card"><h2 id="videoTitle" class="sr-only">Nitika Birthday Video Highlight</h2><video id="birthdayVideo" controls playsinline preload="metadata"><source src="assets/nitika-birthday-wish.mp4" type="video/mp4">Your browser does not support video.</video><div class="video-caption"><span>HAPPY BIRTHDAY NITIKA</span><b>✦</b></div></div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
